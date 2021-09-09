@@ -291,6 +291,7 @@ classdef CovidVisualizationApp < matlab.apps.AppBase
             update_time = string(datetime(t, "ConvertFrom", "datenum" ,"format", "dd/MM/yyyy HH:mm:ss"));
             app.UpdateLabel.Text = sprintf("Updated %s", update_time);
             
+            app.changeData()
             app.plotData()         
         end
 
@@ -345,7 +346,7 @@ classdef CovidVisualizationApp < matlab.apps.AppBase
             websave('new_cases.csv', new_cases_url); 
             websave('new_deaths.csv', new_deaths_url);
             % We call the startupFcn to restart the app 
-            startupFcn(app)  
+            startupFcn(app)
             % Getting Time
             t = now;
             update_time = string(datetime(t, "ConvertFrom", "datenum" ,"format", "dd/MM/yyyy HH:mm:ss"));
