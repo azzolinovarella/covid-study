@@ -2,7 +2,9 @@
 
 Em suma, esse projeto tem como objetivo desenvolver uma interface interativa para monitorar o avanço do COVID-19 pelo mundo. Para executar essa aplicação, acesse o diretório em que o arquivo `CovidVisualizationApp.m` estiver e execute
 
-\>\> ```` CovidVisualizationApp```` 
+````
+CovidVisualizationApp
+```` 
 
 na janela de comando do MATLAB.
 
